@@ -10,6 +10,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/api/bookings")
 @AllArgsConstructor
@@ -28,6 +30,11 @@ public class BookingController {
         return new ResponseEntity<>(bookingResponse, HttpStatus.OK);
     }
 
+    @ResponseStatus(HttpStatus.OK)
+    @GetMapping("/{hotelId}")
+    public List<BookingResponse> checkBookingByRoomId(@PathVariable Long roomId){
+        return bookingService.checkBookingByRoomId(roomId);
+    }
 
 
 }

@@ -35,7 +35,8 @@ public class UserController {
         return new ResponseEntity<>(res, HttpStatus.CREATED);
     }
 
-    
+
+
     @PostMapping("/login")
     public ResponseEntity<AuthenticationResponse> loginCustomer(@RequestBody AuthenticationRequest authenticationRequest){
         return new ResponseEntity<>(userService.authenticate(authenticationRequest), HttpStatus.OK);

@@ -30,8 +30,9 @@ public class SecurityConfig {
                         authorizeHttpRequests
                                 .requestMatchers("/api/login").permitAll()
                                 .requestMatchers("/api/customer/**", "/api/manager/**", "/api/admin/**").permitAll()
+                                .requestMatchers("api/bookings/**").permitAll()
                                 .anyRequest()
-                                .authenticated()
+                                .permitAll() // authenticated去除
                 )
 //                .formLogin((formLogin) ->
 //                        formLogin
