@@ -1,6 +1,5 @@
-package com.jiayi.usermanagement.config;
+package com.jiayi.security.config;
 
-import lombok.Builder;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

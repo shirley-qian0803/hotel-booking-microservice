@@ -5,13 +5,22 @@ import com.jiayi.hotelmanagement.dto.HotelResponse;
 import com.jiayi.hotelmanagement.dto.RoomResponse;
 import com.jiayi.hotelmanagement.model.Hotel;
 import com.jiayi.hotelmanagement.model.Room;
+import com.jiayi.hotelmanagement.repository.HotelElasticRepository;
 import com.jiayi.hotelmanagement.repository.HotelRepository;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.elasticsearch.geometry.Point;
+import org.springframework.data.elasticsearch.core.geo.GeoPoint;
+import org.springframework.data.geo.Distance;
+import org.springframework.data.geo.Metrics;
 import org.springframework.stereotype.Service;
-import com.jiayi.hotelmanagement.service.RoomService;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import java.sql.Timestamp;
+import java.util.Iterator;
+import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.StreamSupport;
 
 @Service
 @AllArgsConstructor
@@ -19,9 +28,11 @@ import java.sql.Timestamp;
 public class HotelService {
 
     private HotelRepository hotelRepository;
+    private HotelElasticRepository hotelElasticRepository;
+
     public HotelResponse createHotel(HotelRequest hotelRequest) {
         // check the hotel is not created(no similar email)
-        if (hotelRepository.findByHotelEmail(hotelRequest.getHotelEmail()).isPresent()){
+        if (hotelRepository.findByHotelEmail(hotelRequest.getHotelEmail()).isPresent()) {
             throw new IllegalArgumentException("The hotel is already created");
         }
         Hotel hotel = Hotel
@@ -44,7 +55,7 @@ public class HotelService {
         return makeHotelResponse(hotel);
     }
 
-    private HotelResponse makeHotelResponse(Hotel hotel){
+    private HotelResponse makeHotelResponse(Hotel hotel) {
         return HotelResponse
                 .builder()
                 .name(hotel.getName())
@@ -70,4 +81,23 @@ public class HotelService {
                 .updatedAt(room.getUpdatedAt())
                 .build();
     }
+
+    public List<HotelResponse> listHotels() {
+        Iterable<Hotel> iterable = hotelElasticRepository.findAll();  // Convert the Iterator to an Iterable
+        return StreamSupport.stream(iterable.spliterator(), false) // Create a Stream from the Iterable
+                .map(this::makeHotelResponse)           // Map each Hotel to a HotelResponse
+                .collect(Collectors.toList());          // Collect into a List
+    }
+
+
+    public List<HotelResponse> searchNearBy(double lat, double lon, double radius) {
+        Distance distance = new Distance(radius, Metrics.KILOMETERS);
+        GeoPoint geoPoint = new GeoPoint(lat, lon);
+        return hotelElasticRepository.findByLocationNear(geoPoint,distance).stream().map(this::makeHotelResponse).toList();
+    }
+
+    public List<HotelResponse> searchByName(String name) {
+        return hotelElasticRepository.findByNameContaining(name).stream().map(this::makeHotelResponse).toList();
+    }
+
 }

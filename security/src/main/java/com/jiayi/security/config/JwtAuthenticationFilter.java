@@ -1,4 +1,4 @@
-package com.jiayi.usermanagement.config;
+package com.jiayi.security.config;
 
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
