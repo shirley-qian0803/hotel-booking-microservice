@@ -30,8 +30,9 @@ public class SecurityConfig {
                                 .requestMatchers("/api/login").permitAll()
                                 .requestMatchers("/api/customer/**", "/api/manager/**", "/api/admin/**").permitAll()
                                 .requestMatchers("api/bookings/**").permitAll()
+                                .requestMatchers("api/hotel/**").hasRole("MANAGER")
                                 .anyRequest()
-                                .permitAll() // authenticated去除
+                                .authenticated()
                 )
 //                .formLogin((formLogin) ->
 //                        formLogin

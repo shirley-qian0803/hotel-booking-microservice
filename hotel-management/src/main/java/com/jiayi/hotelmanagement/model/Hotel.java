@@ -29,6 +29,9 @@ public class Hotel {
     private Timestamp createdAt;
     private Timestamp updatedAt;
 
+    @Embedded
+    private Address address;
+
     @Field(type = FieldType.GeoPoint)
     private GeoPoint location;  // GeoPoint uses latitude and longitude
 

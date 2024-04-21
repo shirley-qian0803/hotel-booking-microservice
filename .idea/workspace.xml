@@ -4,32 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6f4f627-b605-473a-ae41-89d7367f9f13" name="Changes" comment="add hotel-management service">
-      <change afterPath="$PROJECT_DIR$/hotel-booking/src/main/java/com/jiayi/hotelbooking/config/Receiver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hotel-management/src/main/java/com/jiayi/hotelmanagement/controller/HotelController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hotel-management/src/main/java/com/jiayi/hotelmanagement/controller/RoomController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hotel-management/src/main/java/com/jiayi/hotelmanagement/dto/BookingResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hotel-management/src/main/java/com/jiayi/hotelmanagement/dto/HotelRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hotel-management/src/main/java/com/jiayi/hotelmanagement/dto/HotelResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hotel-management/src/main/java/com/jiayi/hotelmanagement/dto/RoomRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hotel-management/src/main/java/com/jiayi/hotelmanagement/dto/RoomResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hotel-management/src/main/java/com/jiayi/hotelmanagement/dto/Status.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hotel-management/src/main/java/com/jiayi/hotelmanagement/dto/UpdateRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hotel-management/src/main/java/com/jiayi/hotelmanagement/model/Address.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hotel-management/src/main/java/com/jiayi/hotelmanagement/model/Hotel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hotel-management/src/main/java/com/jiayi/hotelmanagement/model/Room.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hotel-management/src/main/java/com/jiayi/hotelmanagement/model/RoomStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hotel-management/src/main/java/com/jiayi/hotelmanagement/model/RoomType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hotel-management/src/main/java/com/jiayi/hotelmanagement/repository/HotelRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hotel-management/src/main/java/com/jiayi/hotelmanagement/repository/RoomRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hotel-management/src/main/java/com/jiayi/hotelmanagement/service/HotelService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hotel-management/src/main/java/com/jiayi/hotelmanagement/service/MessagePublisher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hotel-management/src/main/java/com/jiayi/hotelmanagement/service/RoomService.java" afterDir="false" />
+    <list default="true" id="a6f4f627-b605-473a-ae41-89d7367f9f13" name="Changes" comment="add shared security configuration">
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel-booking/src/main/java/com/jiayi/hotelbooking/repository/BookingRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/hotel-booking/src/main/java/com/jiayi/hotelbooking/repository/BookingRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel-booking/src/main/java/com/jiayi/hotelbooking/service/BookingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/hotel-booking/src/main/java/com/jiayi/hotelbooking/service/BookingService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel-management/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/hotel-management/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel-management/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/hotel-management/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel-management/src/main/java/com/jiayi/hotelmanagement/model/Hotel.java" beforeDir="false" afterPath="$PROJECT_DIR$/hotel-management/src/main/java/com/jiayi/hotelmanagement/model/Hotel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/src/main/java/com/jiayi/security/config/ApplicationConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/src/main/java/com/jiayi/security/config/ApplicationConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/src/main/java/com/jiayi/security/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/src/main/java/com/jiayi/security/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-management/src/main/java/com/jiayi/usermanagement/config/ApplicationConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-management/src/main/java/com/jiayi/usermanagement/config/ApplicationConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,12 +31,26 @@
         <task path="$PROJECT_DIR$/user-management">
           <activation />
         </task>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="hotel-booking-service-new" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="hotel-booking-service-new" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="hotel-booking-service-new" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -67,9 +62,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Enum" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -97,6 +92,9 @@
   &quot;keyToString&quot;: {
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;Gradle.Build hotel-booking-service-new.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.hotel-booking-service-new [build].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.hotel-booking-service-new [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.hotel-booking-service-new:user-management [build].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.hotel-booking-service-new:user-management [clean].executor&quot;: &quot;Run&quot;,
     &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
     &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
@@ -106,7 +104,9 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;Spring Boot.HotelBookingApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.HotelManagementApplication.executor&quot;: &quot;Run&quot;,
     &quot;Spring Boot.UserManagementApplication.executor&quot;: &quot;Run&quot;,
+    &quot;deletionFromPopupRequiresConfirmation&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -115,6 +115,9 @@
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;onboarding.tips.debug.path&quot;: &quot;/Users/realshirley/Code/hotel-booking-service-new/src/main/java/org/jiayi/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
     &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -134,29 +137,7 @@
       <recent name="com.jiayi.hotelmanagement.dto" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.UserManagementApplication">
-    <configuration name="hotel-booking-service-new:user-management [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/user-management" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="clean" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Spring Boot.HotelManagementApplication">
     <configuration name="HotelBookingApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="hotel-booking-service-new.hotel-booking.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.jiayi.hotelbooking.HotelBookingApplication" />
@@ -171,6 +152,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SecurityApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="hotel-booking-service-new.security.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.jiayi.security.SecurityApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UserManagementApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="hotel-booking-service-new.user-management.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.jiayi.usermanagement.UserManagementApplication" />
@@ -178,11 +166,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Gradle.hotel-booking-service-new:user-management [clean]" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -204,6 +187,8 @@
       <workItem from="1713548974612" duration="6795000" />
       <workItem from="1713558170995" duration="2431000" />
       <workItem from="1713582451076" duration="7049000" />
+      <workItem from="1713641347857" duration="14083000" />
+      <workItem from="1713711845570" duration="2342000" />
     </task>
     <task id="LOCAL-00001" summary="add two services: hotel-booking &amp; user-management">
       <option name="closed" value="true" />
@@ -229,7 +214,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713555082810</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add shared security configuration">
+      <option name="closed" value="true" />
+      <created>1713651595243</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1713651595243</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -239,7 +232,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="add two services: hotel-booking &amp; user-management" />
     <MESSAGE value="add hotel-management service" />
-    <option name="LAST_COMMIT_MESSAGE" value="add hotel-management service" />
+    <MESSAGE value="add shared security configuration" />
+    <option name="LAST_COMMIT_MESSAGE" value="add shared security configuration" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

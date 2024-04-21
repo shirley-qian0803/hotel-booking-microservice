@@ -18,6 +18,15 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 @Configuration
 @RequiredArgsConstructor
 public class ApplicationConfig {
+    // User model extends the UserDetailsService
+    // we choose the email as the username to discern different users.
+
+    private final UserRepository userRepository;
+    @Bean
+    public UserDetailsService userDetailsService(){
+        return username -> userRepository.findByEmail(username)
+                .orElseThrow(() -> new UsernameNotFoundException("User not found"));
+    }
 
     @Bean
     public AuthenticationProvider authenticationProvider(){
