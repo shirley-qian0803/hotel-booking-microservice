@@ -34,11 +34,6 @@ public class SecurityConfig {
                                 .anyRequest()
                                 .permitAll() // authenticated去除
                 )
-//                .formLogin((formLogin) ->
-//                        formLogin
-//                                .loginPage("/api/login")
-//                                .permitAll()
-//                )
                 .sessionManagement((sessionManagement) ->
                         sessionManagement
                                 .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
