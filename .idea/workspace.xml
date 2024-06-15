@@ -5,31 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a6f4f627-b605-473a-ae41-89d7367f9f13" name="Changes" comment="add hotel-management service">
-      <change afterPath="$PROJECT_DIR$/hotel-booking/src/main/java/com/jiayi/hotelbooking/config/Receiver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hotel-management/src/main/java/com/jiayi/hotelmanagement/controller/HotelController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hotel-management/src/main/java/com/jiayi/hotelmanagement/controller/RoomController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hotel-management/src/main/java/com/jiayi/hotelmanagement/dto/BookingResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hotel-management/src/main/java/com/jiayi/hotelmanagement/dto/HotelRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hotel-management/src/main/java/com/jiayi/hotelmanagement/dto/HotelResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hotel-management/src/main/java/com/jiayi/hotelmanagement/dto/RoomRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hotel-management/src/main/java/com/jiayi/hotelmanagement/dto/RoomResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hotel-management/src/main/java/com/jiayi/hotelmanagement/dto/Status.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hotel-management/src/main/java/com/jiayi/hotelmanagement/dto/UpdateRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hotel-management/src/main/java/com/jiayi/hotelmanagement/model/Address.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hotel-management/src/main/java/com/jiayi/hotelmanagement/model/Hotel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hotel-management/src/main/java/com/jiayi/hotelmanagement/model/Room.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hotel-management/src/main/java/com/jiayi/hotelmanagement/model/RoomStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hotel-management/src/main/java/com/jiayi/hotelmanagement/model/RoomType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hotel-management/src/main/java/com/jiayi/hotelmanagement/repository/HotelRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hotel-management/src/main/java/com/jiayi/hotelmanagement/repository/RoomRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hotel-management/src/main/java/com/jiayi/hotelmanagement/service/HotelService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hotel-management/src/main/java/com/jiayi/hotelmanagement/service/MessagePublisher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hotel-management/src/main/java/com/jiayi/hotelmanagement/service/RoomService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel-booking/src/main/java/com/jiayi/hotelbooking/repository/BookingRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/hotel-booking/src/main/java/com/jiayi/hotelbooking/repository/BookingRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel-booking/src/main/java/com/jiayi/hotelbooking/service/BookingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/hotel-booking/src/main/java/com/jiayi/hotelbooking/service/BookingService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel-management/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/hotel-management/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel-management/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/hotel-management/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,32 +69,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Gradle.Build hotel-booking-service-new.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.hotel-booking-service-new:user-management [clean].executor&quot;: &quot;Run&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Spring Boot.HotelBookingApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.UserManagementApplication.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/realshirley/Code/hotel-booking-service-new/src/main/java/org/jiayi/Main.java&quot;,
-    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Gradle.Build hotel-booking-service-new.executor": "Run",
+    "Gradle.hotel-booking-service-new:user-management [clean].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.HotelBookingApplication.executor": "Run",
+    "Spring Boot.UserManagementApplication.executor": "Run",
+    "git-widget-placeholder": "trial-service",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "/Users/realshirley/Code/hotel-booking-service-new/src/main/java/org/jiayi/Main.java",
+    "run.configurations.included.in.services": "true",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.jiayi.hotelmanagement.model" />
