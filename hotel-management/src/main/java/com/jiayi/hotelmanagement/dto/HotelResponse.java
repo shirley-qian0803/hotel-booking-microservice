@@ -7,6 +7,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import org.locationtech.jts.geom.Point;
 import java.sql.Timestamp;
 import java.util.List;
 
@@ -18,7 +19,7 @@ public class HotelResponse {
     private String name;
     private Long managerId;
     private String hotelEmail;
-    private Address address;
+    private Point location;
     private Timestamp createdAt;
     private Timestamp updatedAt;
     private List<RoomResponse> roomResponses;

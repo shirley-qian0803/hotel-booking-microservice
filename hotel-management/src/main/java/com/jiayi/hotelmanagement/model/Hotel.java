@@ -8,6 +8,7 @@ import lombok.NoArgsConstructor;
 
 import java.sql.Timestamp;
 import java.util.List;
+import org.locationtech.jts.geom.Point;
 
 @Entity
 @Table(name = "t_Hotel")
@@ -24,8 +25,8 @@ public class Hotel {
     private Timestamp createdAt;
     private Timestamp updatedAt;
 
-    @Embedded
-    private Address address;
+    private Point location; // Use Point type from JTS library
+
     @Column(unique = true)
     private String hotelEmail;
 

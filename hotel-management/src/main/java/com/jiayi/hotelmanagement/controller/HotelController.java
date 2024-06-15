@@ -11,6 +11,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/api/hotel")
 @AllArgsConstructor
@@ -26,5 +28,16 @@ public class HotelController {
     @ResponseStatus(HttpStatus.OK)
     public HotelResponse getHotel(@PathVariable Long hotelId){
         return hotelService.getHotel(hotelId);
+    }
+
+
+    @GetMapping("/search/nearby")
+    public List<HotelResponse> searchNearBy(@RequestParam double lat, @RequestParam double lon, @RequestParam double radius) {
+        return hotelService.searchNearBy(lat, lon, radius);
+    }
+
+    @GetMapping("/search")
+    public List<HotelResponse> searchByName(@RequestParam String name) {
+        return hotelService.searchByName(name);
     }
 }

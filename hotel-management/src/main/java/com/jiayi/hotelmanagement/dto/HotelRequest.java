@@ -7,6 +7,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import org.locationtech.jts.geom.Point;
 import java.util.List;
 
 @Data
@@ -17,6 +18,6 @@ public class HotelRequest {
     private String name;
     private Long managerId;
     private String hotelEmail;
-    private Address address;
+    private Point location;
     private List<Room> rooms;
 }

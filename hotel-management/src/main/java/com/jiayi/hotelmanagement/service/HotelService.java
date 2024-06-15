@@ -12,6 +12,8 @@ import org.springframework.stereotype.Service;
 import com.jiayi.hotelmanagement.service.RoomService;
 
 import java.sql.Timestamp;
+import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 @AllArgsConstructor
@@ -28,7 +30,7 @@ public class HotelService {
                 .builder()
                 .name(hotelRequest.getName())
                 .managerId(hotelRequest.getManagerId())
-                .address(hotelRequest.getAddress())
+                .location(hotelRequest.getLocation())
                 .hotelEmail(hotelRequest.getHotelEmail())
                 .rooms(hotelRequest.getRooms())
                 .createdAt(new Timestamp(System.currentTimeMillis()))
@@ -50,7 +52,7 @@ public class HotelService {
                 .name(hotel.getName())
                 .managerId(hotel.getManagerId())  // Assuming there's a Manager entity with getId()
                 .hotelEmail(hotel.getHotelEmail())
-                .address(hotel.getAddress())
+                .location(hotel.getLocation())
                 .createdAt(hotel.getCreatedAt())
                 .updatedAt(hotel.getUpdatedAt())
                 .roomResponses(hotel.getRooms().stream().map(this::mapRoomToRoomResponse).toList())
@@ -69,5 +71,20 @@ public class HotelService {
                 .createdAt(room.getCreatedAt())
                 .updatedAt(room.getUpdatedAt())
                 .build();
+    }
+
+    public List<HotelResponse> searchNearBy(double lat, double lon, double radius) {
+        String point = "POINT(" + lon + " " + lat + ")";
+        return hotelRepository.findHotelsNearLocation(point, radius)
+                .stream()
+                .map(this::makeHotelResponse)
+                .collect(Collectors.toList());
+    }
+
+    public List<HotelResponse> searchByName(String name) {
+        return hotelRepository.findByNameLike(name)
+                .stream()
+                .map(this::makeHotelResponse)
+                .collect(Collectors.toList());
     }
 }

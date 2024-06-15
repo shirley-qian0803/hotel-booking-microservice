@@ -6,6 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="a6f4f627-b605-473a-ae41-89d7367f9f13" name="Changes" comment="add hotel-management service">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/changes-from-B-to-C.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel-management/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/hotel-management/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel-management/src/main/java/com/jiayi/hotelmanagement/controller/HotelController.java" beforeDir="false" afterPath="$PROJECT_DIR$/hotel-management/src/main/java/com/jiayi/hotelmanagement/controller/HotelController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel-management/src/main/java/com/jiayi/hotelmanagement/dto/HotelRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/hotel-management/src/main/java/com/jiayi/hotelmanagement/dto/HotelRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel-management/src/main/java/com/jiayi/hotelmanagement/dto/HotelResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/hotel-management/src/main/java/com/jiayi/hotelmanagement/dto/HotelResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel-management/src/main/java/com/jiayi/hotelmanagement/model/Hotel.java" beforeDir="false" afterPath="$PROJECT_DIR$/hotel-management/src/main/java/com/jiayi/hotelmanagement/model/Hotel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel-management/src/main/java/com/jiayi/hotelmanagement/repository/HotelRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/hotel-management/src/main/java/com/jiayi/hotelmanagement/repository/HotelRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel-management/src/main/java/com/jiayi/hotelmanagement/service/HotelService.java" beforeDir="false" afterPath="$PROJECT_DIR$/hotel-management/src/main/java/com/jiayi/hotelmanagement/service/HotelService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
